@@ -1,9 +1,12 @@
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import Home from './pages/Home.jsx'
 const App =() =>{
   return (
-    <div>
-      <h1>Hello World</h1>
-      <p>Welcome to my React app!</p>
-    </div>
+    <Router>
+      <Routes>
+         <Route path='/' element={<Home />} />
+      </Routes>
+    </Router>
   )
 }
 
